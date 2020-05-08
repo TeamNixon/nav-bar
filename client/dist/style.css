@@ -3,11 +3,13 @@ body{
     font-family: 'Roboto', Arial;
 }
 
-.mainNavContainer{
+.greyLineUnderNav{
     width: 100%;
-    height: 12em;
+    height: 8.3em;
     display: block;
     border-bottom: 1px solid #e6e6e6;
+    position: absolute;
+    z-index: 0;
 }
 
 .topBlackBar {
@@ -16,24 +18,66 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-.logo{
-    margin-left: 27.5%;
+.logoDiv{
+    margin-left: auto;
+    margin-right: auto;
+}
+#logoIcon{
+    width: 8em;
 }
 
 .subNavContainer {
     display: flex;
     margin-top: 1.5em;
-    border: 1px solid red;
 }
+
+.rightsideDiv {
+    position: absolute;
+    margin-left: 71em;
+}
+
+.rightside{
+    display: flex;
+    margin-top: 6%;
+    border: 1px solid yellow;
+}
+
+#list {
+    padding-right: 4em;
+    list-style-type: none;
+    color: rgb(131, 131, 131);
+    font-size: 0.7em;
+    border: 1px solid cyan;
+}
+
+.categoryDiv {
+    margin-top: 2.7em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.categoryList{
+    display: flex;
+    font-size: 0.7em;
+    margin-left: 32%;
+}
+
+#category {
+    list-style-type: none;
+    color: rgb(61, 61, 61);
+    padding-right: 4em;
+}
+
+/* SEARCH RESULTS ---------------------------------
+---------------------------------------------------*/
 
 .searchContainer {
     max-width: 11.6%;
     padding: 0 1em 0.3em 2em;
-    margin-top: 1.5em;
     margin-left: 4.5em;
     height: 1.5em;
     margin-top: -0.4em;
     display: inline-table;
+    position: absolute;
 }
 
 .searchIcon {
@@ -71,51 +115,12 @@ border-color: black;
 color: black;
 }
 
-.rightsideDiv {
-    margin-left: 25%;
-}
-
-.rightside{
-    display: flex;
-    margin-top: 6%;
-    border: 1px solid yellow;
-}
-
-#list {
-    padding-right: 2em;
-    list-style-type: none;
-    color: rgb(131, 131, 131);
-    font-size: 0.7em;
-    border: 1px solid cyan;
-}
-
-.categoryDiv {
-    margin-top: 2.5em;
-    margin-left: 3em;
-}
-.categoryList{
-    display: flex;
-    font-size: 0.7em;
-    margin-left: 32%;
-}
-
-#category {
-    list-style-type: none;
-    color: rgb(61, 61, 61);
-    padding-right: 4em;
-
-}
-
-/* SEARCH RESULTS ---------------------------------
----------------------------------------------------*/
-
 .suggestionContainer {
     height: 2em;
 }
 
 .suggestionContainerText{
     padding-top: 1em;
-    margin-top: 1em;
     color: #acb1b4;
     margin-left: 1em;
 }
@@ -129,9 +134,11 @@ color: black;
 .searchResultsContainer {
     height: fit-content;
     max-width: 14.5em;
-    margin-left: 4.6em;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
-    margin-top: -6em;
+    margin-top: 1em;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
 }
 
 #resultsListingContainer {
