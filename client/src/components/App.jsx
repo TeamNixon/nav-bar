@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import SearchResults from './SearchResults.jsx';
+import SearchBar from './SearchBar.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,10 +10,11 @@ class App extends React.Component {
         allData: [],
     }
     this.getAllData = this.getAllData.bind(this)
+    this.setData = this.setData.bind(this)
   }
 
   componentDidMount(){
-    this.getAllData();
+    // this.getAllData();
     console.log("Component Mounted!")
   }
 
@@ -24,6 +26,12 @@ class App extends React.Component {
       .catch(error => console.error(error))
   }
 
+  setData(data){
+    this.setState({
+        allData: data
+    })
+  }
+
   render() {
     return (
       <div className="mainNavContainer">
@@ -32,10 +40,7 @@ class App extends React.Component {
           <div className="searchContainer">
             <img className="searchIcon" src="magnifying_icon.png"></img>
             <div className="inputWrapper">
-              <input
-                className="inputBar"
-                placeholder="What can we help you find?"
-              ></input>
+            <SearchBar setData={this.setData}/>
             </div>
           </div>
 

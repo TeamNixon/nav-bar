@@ -7,7 +7,8 @@ class SearchResults extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-          results: []
+          results: [],
+          suggestionText: "sampleText",
       }
     }
   
@@ -19,9 +20,20 @@ class SearchResults extends React.Component {
     render() {
       return (
         <div className="searchResultsContainer">
-        <ul>
+        <div className="suggestionContainer">
+            <div className="suggestionContainerText">{`Suggestions: `}</div>
+            <div className="suggestionContainerQuery">{`"${this.state.suggestionText}"`}</div>
+        </div>
+        <ul className="resultsListingContainerWrapper">
         {this.props.results.map((item, index) => (
-            <li key={index} id="resultsListingContainer"> {item.product_name}</li>
+            <li key={index} id="resultsListingContainer">
+             <img src={item.images[0]} id="resultsImg"></img>
+                <ul className="resultsListingTextContainer">
+                <li id="resultsListingName">{item.product_name}</li>
+                <li id="resultsListingText">{`$${item.product_price}.00 - $${item.product_price*1.5}.00 `}</li>
+                <li id="resultsListingText">{`${item.colors.length} Colors`}</li>
+                </ul>
+            </li>
         ))}
         </ul>
         </div>
