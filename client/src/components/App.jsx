@@ -1,6 +1,6 @@
 import React from "react";
 import axios from 'axios';
-
+import SignIn from './SignIn.jsx'
 import SearchBar from './SearchBar.jsx';
 
 class App extends React.Component {
@@ -33,9 +33,10 @@ class App extends React.Component {
 
           <div className="rightsideDiv">
             <ul className="rightside">
+              <img id="flagIcon" src="http://icons.iconarchive.com/icons/wikipedia/flags/256/US-United-States-Flag-icon.png"></img>
               <li id="list">EN</li>
               <li id="list">Find a Store</li>
-              <li id="list">Sign in</li>
+              <SignIn/>
             </ul>
           </div>
         </div>
