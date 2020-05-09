@@ -1,43 +1,67 @@
 import React from "react";
 import axios from 'axios';
 
-
-
 class SearchResults extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
           results: [],
-          suggestionText: "sampleText",
+          suggestionText: "Sample",
       }
     }
   
     componentDidMount(){
-      console.log("SearchResults Mounted!")
+      this.setState({
+        results: this.props.results
+      })
+    }
+
+    componentDidUpdate(prevProps, prevState){
+      if (prevProps.results !== this.props.results) {
+        this.setState({
+          results: this.props.results
+        })
+        console.log(this.state.results)
+      }
     }
   
-  
+    // componentDidUpdate(prevProps, prevState) {
+    //   // only update chart if the data has changed
+    //   if (prevProps.data !== this.props.data) {
+    //     this.chart = c3.load({
+    //       data: this.props.data
+    //     });
+    //   }
+    // }
+
+
     render() {
-      return (
-        <div className="searchResultsContainer">
-        <div className="suggestionContainer">
-            <div className="suggestionContainerText">{`Suggestions: `}</div>
-            <div className="suggestionContainerQuery">{`"${this.state.suggestionText}"`}</div>
-        </div>
-        <ul className="resultsListingContainerWrapper">
-        {this.props.results.map((item, index) => (
-            <li key={index} id="resultsListingContainer">
-             <img src={item.images[0]} id="resultsImg"></img>
-                <ul className="resultsListingTextContainer">
-                <li id="resultsListingName">{item.product_name}</li>
-                <li id="resultsListingText">{`$${item.product_price}.00 - $${item.product_price*1.5}.00 `}</li>
-                <li id="resultsListingText">{`${item.colors.length} Colors`}</li>
-                </ul>
-            </li>
-        ))}
-        </ul>
-        </div>
-      );
+      if(this.state.results.length > 0) {
+        return (
+          <div className="searchResultsContainer">
+          <div className="suggestionContainer">
+              <div className="suggestionContainerText">{`Suggestions: `}</div>
+              <div className="suggestionContainerQuery">{`"${this.state.suggestionText}"`}</div>
+          </div>
+          <ul className="resultsListingContainerWrapper">
+          {this.state.results.map((item, index) => (
+              <li key={index} id="resultsListingContainer">
+               <img src={item.images[0]} id="resultsImg"></img>
+                  <ul className="resultsListingTextContainer">
+                  <li id="resultsListingName">{item.product_name}</li>
+                  <li id="resultsListingText">{`$${item.product_price}.00 - $${item.product_price*1.5}.00 `}</li>
+                  <li id="resultsListingText">{`${item.colors.length} Colors`}</li>
+                  </ul>
+              </li>
+          ))}
+          </ul>
+          </div>
+        );
+      } else {
+        return (
+          <div></div>
+        )
+      }
     }
   }
 
