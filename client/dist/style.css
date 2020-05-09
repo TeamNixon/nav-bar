@@ -39,7 +39,6 @@ body{
 .rightside{
     display: flex;
     margin-top: 6%;
-    border: 1px solid yellow;
 }
 
 #list {
@@ -47,7 +46,6 @@ body{
     list-style-type: none;
     color: rgb(131, 131, 131);
     font-size: 0.7em;
-    border: 1px solid cyan;
     cursor: pointer;
 }
 
@@ -105,11 +103,13 @@ body{
 #downArrowIcon{
     max-height: 1em;
     margin-left: -2.3em;
+    margin-top: -0.1em;
 }
 
 #upArrowIcon{
     max-height: 1em;
     margin-left: -2.3em;
+    margin-top: -0.1em;
     transform: rotate(180deg);
 }
 
@@ -118,6 +118,89 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+/*CHECKOUT CART HOVER ======================
+===================================*/
+.cartIconContainer{
+    max-width: fit-content;
+    margin-left: 1.4em;
+}
+
+#cartIconImg{
+    max-width: 1.7em;
+    margin-top: -0.3em;
+    position: absolute;
+}
+
+.cartHoverContainer{
+    width: 28em;
+    height: 28em;
+    position: absolute;
+    text-align: left;
+    margin-left: -25.5em;
+    margin-top: 1.6em;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    background-color: whitesmoke;
+}
+
+#cartTextOne{
+    padding: 1.5em 0 1.5em 1.5em;
+    color: #6d6d6d;
+}
+
+#inCartQuantity{
+    margin-left: 17.9em;
+    margin-top: -0.5em;
+    position: absolute;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+#inCartProducts {
+    height: 15em;
+    background: white;
+}
+
+#cartTextTwoContainer{
+    display: flex;
+    height: 13.7em;
+    margin-top: 1.5em;
+}
+
+#cartTextTwoLeft {
+    margin-left: 1em;
+    color: #636363;
+}
+
+#cartTextTwoRight {
+    color: #313131;
+    font-weight: 550;
+    margin-left: 7em;
+}
+
+#cartTextOne {
+    padding: 1em 0 1em 1em;
+    background-color: #f5f5f5;
+    color: #545454;
+}
+
+#checkOutButton{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 1em 13.4em 1em;
+    margin-left: 1.3em;
+    margin-top: -12.4em;
+    position: absolute;
+    border-radius: 0.2em;
+}
+
+#checkOutButton:hover {
+    background-color: #313131;
+    cursor: pointer;
+  }
+
+/* CATEGORY NAV BAR ====================
+==========================================*/
 
 .categoryList{
     display: flex;

@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import SignIn from './SignIn.jsx'
+import Cart from './Cart.jsx'
 import SearchBar from './SearchBar.jsx';
 
 class App extends React.Component {
@@ -37,6 +38,8 @@ class App extends React.Component {
               <li id="list">EN</li>
               <li id="list">Find a Store</li>
               <SignIn/>
+              <li id="inCartQuantity">{`0`}</li>
+              <Cart/>
             </ul>
           </div>
         </div>
