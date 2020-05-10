@@ -9,7 +9,7 @@ body{
     display: block;
     border-bottom: 1px solid #e6e6e6;
     position: absolute;
-    z-index: 0;
+    z-index: -10;
 }
 
 .topBlackBar {
@@ -33,7 +33,7 @@ body{
 
 .rightsideDiv {
     position: absolute;
-    margin-left: 78em;
+    margin-left: 73em;
 }
 
 .rightside{
@@ -59,6 +59,7 @@ body{
 .signIn{
     display: inherit;
 }
+
 .hoverSignIn{
     margin-left: -16.3em;
     margin-top: 2em;
@@ -113,11 +114,7 @@ body{
     transform: rotate(180deg);
 }
 
-.categoryDiv {
-    margin-top: 2.7em;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /*CHECKOUT CART HOVER ======================
 ===================================*/
 .cartIconContainer{
@@ -201,17 +198,90 @@ body{
 
 /* CATEGORY NAV BAR ====================
 ==========================================*/
+.navBarContainer {
+    margin-top: 2.7em;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.categoryList{
+.navBarList{
     display: flex;
     font-size: 0.7em;
     margin-left: 32%;
 }
 
-#category {
+#navBarCategoryItem {
     list-style-type: none;
     color: rgb(61, 61, 61);
     padding-right: 4em;
+    cursor: pointer;
+}
+
+.navBarHoverBox {
+    width: 100%;
+    height: 20em;
+    margin-top: 1.3em;
+    display: flex;
+    box-shadow: 0 3px 8px -1px rgba(0,0,0,.2);
+}
+
+.watchesShoppingCategoryContainer {
+    border-right: 2px solid rgb(124, 124, 124);
+    margin-left: 13em;
+    width: 10em;
+    border-right: 2px solid #f5f5f5;
+    margin-top: 2em;
+    height: fit-content;
+    padding-right: 6em;
+    font-weight: 600;
+
+}
+
+#watchesShoppingItem {
+    list-style-type: none;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    padding-bottom: 1em;
+}
+
+#watchesCategoryShopAllArrow {
+    margin-left: 1em;
+    max-width: 1em;
+    margin-top: 0.5em;
+}
+
+.watchesStylesCategoryContainer {
+    height: auto;
+    display: flex;
+    width: 57%;
+}
+.watchesStylesCategoryHorizontalList {
+    display: flex;
+    margin-top: 2em;
+}
+
+.watchesStylesCategorySub_Container {
+    display: block;
+    width: 10em;
+}
+
+#watchesStylesCategoryHeading {
+    list-style-type: none;
+    color: rgb(77, 77, 77);
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: -1em;
+    font-weight: 600;
+}
+
+#watchesStylesCategoryItem {
+    list-style-type: none;
+    color: rgb(141, 141, 141);
+    cursor: pointer;
+    margin-left: -1em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
 }
 
 /* SEARCH RESULTS ---------------------------------

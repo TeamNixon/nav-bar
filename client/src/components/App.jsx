@@ -3,6 +3,7 @@ import axios from 'axios';
 import SignIn from './SignIn.jsx'
 import Cart from './Cart.jsx'
 import SearchBar from './SearchBar.jsx';
+import HeaderNav from './HeaderNav.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -43,14 +44,8 @@ class App extends React.Component {
             </ul>
           </div>
         </div>
-        <div className="categoryDiv">
-          <ul className="categoryList">
-            <li id="category">Men's Watches</li>
-            <li id="category">Women's Watches</li>
-            <li id="category">Bags</li>
-            <li id="category">Clothing & Accessories</li>
-          </ul>
-        </div>
+        <HeaderNav/>
+        
 
       </div>
     );
