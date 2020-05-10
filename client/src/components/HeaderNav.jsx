@@ -19,10 +19,19 @@ if(this.state.hover) {
     return (
         <div className="navBarContainer">
         <ul className="navBarList">
-          <li id="navBarCategoryItem" onMouseOver={this.handleHover.bind(this)}>Men's Watches</li>
-          <li id="navBarCategoryItem">Women's Watches</li>
-          <li id="navBarCategoryItem">Bags</li>
-          <li id="navBarCategoryItem">Clothing & Accessories</li>
+            <div className="navBarCategoryItemWrapper" onMouseOver={this.handleHover.bind(this)}>
+          <li id="navBarCategoryItem">Men's Watches</li>
+          <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            </div>
+          <div className="navBarCategoryItemWrapper">
+            <li id="navBarCategoryItem">Women's Watches</li>
+          </div>
+          <div className="navBarCategoryItemWrapper">
+            <li id="navBarCategoryItem">Bags</li>
+          </div>
+          <div className="navBarCategoryItemWrapper">
+            <li id="navBarCategoryItem">Clothing & Accessories</li>
+          </div>
         </ul>
       </div>
     )
@@ -30,10 +39,19 @@ if(this.state.hover) {
         return(
             <div className="navBarContainer">
             <ul className="navBarList">
-              <li id="navBarCategoryItem">Men's Watches</li>
-              <li id="navBarCategoryItem">Women's Watches</li>
-              <li id="navBarCategoryItem">Bags</li>
-              <li id="navBarCategoryItem">Clothing & Accessories</li>
+            <div className="navBarCategoryItemWrapper">
+                <li id="navBarCategoryItemActive">Men's Watches</li>
+                <img id="navBarUpArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            </div>
+            <div className="navBarCategoryItemWrapper">
+                <li id="navBarCategoryItem">Women's Watches</li>
+                </div>
+            <div className="navBarCategoryItemWrapper">
+                <li id="navBarCategoryItem">Bags</li>
+                </div>
+            <div className="navBarCategoryItemWrapper">
+                <li id="navBarCategoryItem">Clothing & Accessories</li>
+                </div>
             </ul>
             <div className="navBarHoverBox" onMouseLeave={this.handleHover.bind(this)}>
                 <div className="watchesShoppingCategoryContainer">
