@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('./fonts/AvenirNextLTPro-Medium.woff2') format('woff2'),
+        url('./fonts/AvenirNextLTPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
 body{
     margin: 0;
-    font-family: 'Roboto', Arial;
+    font-family: 'Avenir Next LT Pro', Arial,sans-serif;
 }
 
 .greyLineUnderNav{
@@ -19,21 +27,27 @@ body{
 }
 
 .logoDiv{
-    margin-left: auto;
+    margin-left: 68em;
     margin-right: auto;
+    width: 30%;
+    max-height: fit-content;
+    text-align: center;
 }
 #logoIcon{
-    width: 8em;
+    width: 9em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .subNavContainer {
     display: flex;
-    margin-top: 1.5em;
+    margin-top: 1.8em;
 }
 
 .rightsideDiv {
-    position: absolute;
-    margin-left: 73em;
+    position: relative;
+    margin-right: 7em;
+    float: left;
 }
 
 .rightside{
@@ -199,24 +213,30 @@ body{
 /* CATEGORY NAV BAR ====================
 ==========================================*/
 .navBarContainer {
-    margin-top: 2.7em;
+    margin-top: -0.3em;
     margin-left: auto;
+    width: 75%;
     margin-right: auto;
+    text-align: center;
 }
 
 .navBarList{
     display: flex;
     font-size: 0.7em;
-    margin-left: 32%;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    margin-top: 2.3em;
 }
 
 .navBarCategoryItemWrapper{ /*where arrow icons are*/
-    display:flex;
+    display: inline-flex;
+    margin-right: 2em;
 }
 
 #navBarDownArrowIcon {
     max-height: 1.5em;
-    margin-left: -3.5em;
+    margin-left: -4em;
     margin-top: -0.2em;
     padding-right: 2em;
 }
@@ -233,7 +253,8 @@ body{
     list-style-type: none;
     color: rgb(61, 61, 61);
     padding-right: 4em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+    font-size: 0.8rem;
     cursor: pointer;
 }
 
@@ -241,19 +262,22 @@ body{
     list-style-type: none;
     color: rgb(61, 61, 61);
     cursor: pointer;
-    border-bottom: 2px solid black;
+    font-size: 0.8rem;
+    border-bottom: 3px solid black;
 }
 
 
 .navBarHoverBox {
     width: 100%;
     height: 20em;
-    margin-top: -0.7em;
+    margin-top: -0.6em;
     display: flex;
     box-shadow: 0 3px 8px -1px rgba(0,0,0,.2);
     background-color: white;
     position: absolute;
+    text-align: left;
     z-index: 99;
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
 }
 
 .watchesShoppingCategoryContainer {
@@ -261,11 +285,10 @@ body{
     margin-left: 13em;
     width: 10em;
     border-right: 2px solid #f5f5f5;
-    margin-top: 2em;
+    margin-top: 1em;
     height: fit-content;
     padding-right: 6em;
-    font-weight: 600;
-
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
 }
 
 #watchesShoppingItem {
@@ -274,10 +297,11 @@ body{
     cursor: pointer;
     padding-top: 1em;
     width: fit-content;
+    font-weight: 550;
 }
 
 #watchesShoppingItem:hover {
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid rgb(80, 80, 80);
 }
 
 #watchesCategoryShopAllArrow {
@@ -303,26 +327,27 @@ body{
 
 #watchesStylesCategoryHeading {
     list-style-type: none;
-    color: rgb(77, 77, 77);
+    color: rgb(34, 34, 34);
     cursor: pointer;
     padding-top: 1em;
     padding-bottom: 1em;
-    margin-left: -1em;
-    font-weight: 600;
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
+    font-weight: 500;
 }
 
 #watchesStylesCategoryItem {
     list-style-type: none;
     color: rgb(141, 141, 141);
     cursor: pointer;
-    margin-left: -1em;
     padding-top: 0.5em;
     padding-bottom: 1em;
+    font-size: 12.9px;
+    font-family: 'Avenir Next LT Pro';
 }
 
 #watchesStylesCategoryItem:hover {
-    font-weight: 600;
-    color:  rgb(128, 128, 128);
+    color:  rgb(41, 41, 41);
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
 }
 /* SEARCH RESULTS ---------------------------------
 ---------------------------------------------------*/
@@ -352,7 +377,7 @@ body{
 
 .inputBar {
     width: 15em;
-    font-family: 'Arial';
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
     border-style: none;
     margin-left: 2.3em;
     word-spacing: 0.1em;
