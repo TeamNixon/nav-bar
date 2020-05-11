@@ -10,11 +10,25 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      cartQuantity: 0,
     }
+    this.updateCartQuantity = this.updateCartQuantity.bind(this)
   }
 
   componentDidMount(){
     console.log("Component Mounted!")
+  }
+
+  updateCartQuantity(quantity){
+    if (this.state.cartQuantity < 9){
+      this.setState({
+        cartQuantity: quantity
+      })
+    } else {
+      this.setState({
+        cartQuantity: '9+'
+      })
+    } 
   }
 
   render() {
@@ -40,8 +54,8 @@ class App extends React.Component {
               <li id="list">EN</li>
               <li id="list">Find a Store</li>
               <SignIn/>
-              <li id="inCartQuantity">{`0`}</li>
-              <Cart/>
+              <li id="inCartQuantity">{`${this.state.cartQuantity}`}</li>
+              <Cart updateCartQuantity={this.updateCartQuantity}/>
             </ul>
           </div>
         </div>

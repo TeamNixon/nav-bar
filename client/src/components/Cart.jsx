@@ -22,7 +22,7 @@ getCartItems(){
     axios.get(`/api/navbar/incart/`)
     .then(results => this.setState({
         inCartProducts: results.data
-    }, () => console.log(this.state.inCartProducts)))
+    }, () => this.props.updateCartQuantity(this.state.inCartProducts.length)))
     .catch(error => console.error(error))
 }
 
