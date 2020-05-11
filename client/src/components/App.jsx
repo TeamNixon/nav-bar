@@ -4,6 +4,7 @@ import SignIn from './SignIn.jsx'
 import Cart from './Cart.jsx'
 import SearchBar from './SearchBar.jsx';
 import HeaderNav from './HeaderNav.jsx';
+import HeaderPromotion from './HeaderPromotion.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="topBlackBar"></div>
+      <HeaderPromotion/>
         <div className="greyLineUnderNav"></div>
         <div className="subNavContainer">
           <div className="searchContainer">
