@@ -21,17 +21,17 @@ class App extends React.Component {
     return (
       <div>
       <HeaderPromotion/>
-        <div className="greyLineUnderNav"></div>
+        <div className="greyLineUnderNav">
+        <div className="logoDiv">
+        <img src="logo.png" id="logoIcon"></img>
+      </div>
+        </div>
         <div className="subNavContainer">
           <div className="searchContainer">
             <img className="searchIcon" src="magnifying_icon.png"></img>
             <div className="inputWrapper">
             <SearchBar/>
             </div>
-          </div>
-
-          <div className="logoDiv">
-            <img src="logo.png" id="logoIcon"></img>
           </div>
 
           <div className="rightsideDiv">

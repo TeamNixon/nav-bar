@@ -14,10 +14,11 @@ body{
 .greyLineUnderNav{
     width: 100%;
     height: 8.3em;
-    display: block;
+    display: inline;
     border-bottom: 1px solid #e6e6e6;
     position: absolute;
     z-index: -10;
+    text-align: center;
 }
 
 .topBlackBar {
@@ -30,7 +31,7 @@ body{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 27%;
     padding-top: 0.8em;
 }
 
@@ -48,7 +49,7 @@ body{
     margin-right: auto;
     width: max-content;
     font-size: 0.8em;
-    word-spacing: 0.3em;
+    letter-spacing: .5px;
 }
 
 .headerRightArrow {
@@ -59,27 +60,26 @@ body{
 
 
 .logoDiv{
-    margin-left: 36em;
-    margin-right: auto;
-    width: 30%;
-    max-height: fit-content;
     text-align: center;
+    display: inline-flex;
+    margin-top: 2em;
 }
 #logoIcon{
-    width: 9em;
+    max-height: 2em;
     margin-left: auto;
     margin-right: auto;
 }
 
 .subNavContainer {
     display: flex;
+    width: 57%;
     margin-top: 1.8em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .rightsideDiv {
-    position: relative;
-    margin-right: 7em;
-    float: left;
+    margin-left: auto;
 }
 
 .rightside{
@@ -397,7 +397,6 @@ body{
     height: 1.5em;
     margin-top: -0.4em;
     display: inline-table;
-    position: absolute;
 }
 
 .searchIcon {
