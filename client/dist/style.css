@@ -72,7 +72,7 @@ body{
 
 .subNavContainer {
     display: flex;
-    width: 57%;
+    width: 90%;
     margin-top: 1.8em;
     margin-left: auto;
     margin-right: auto;
@@ -175,8 +175,8 @@ body{
 }
 
 .cartHoverContainer{
-    width: 28em;
-    height: 28em;
+    width: fit-content;
+    height: fit-content;
     position: absolute;
     text-align: left;
     margin-left: -25.5em;
@@ -198,26 +198,88 @@ body{
     list-style-type: none;
 }
 
-#inCartProducts {
-    height: 15em;
+#inCartProductsContainer {
+    height: max-content;
     background: white;
+    border-top: 2px solid whitesmoke;
 }
 
-#cartTextTwoContainer{
+.inCartProductEntryContainer {
     display: flex;
-    height: 13.7em;
-    margin-top: 1.5em;
 }
 
-#cartTextTwoLeft {
-    margin-left: 1em;
+.inCartProductEntryImg {
+    max-height: 5.5em;
+    padding: 1em;
+}
+
+#inCartProductEntryTextContainer {
+    margin-left: -1em;
+    display: block;
+    width: 77%;
+    padding-top: 1em;
+    text-align: left;
+}
+
+#inCartProductNamePriceList {
+    color: #2b2b2b;
+    display: flex;
+    padding-bottom: 0.5em;
+}
+
+#inCartProductName {
+    list-style-type: none;
+}
+
+#inCartProductPrice {
+    margin-left: auto;
+    list-style-type: none;
+    font-size: 0.8em;
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
+}
+
+#inCartProductInfo {
+    color: #969696;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+#inCartProductInfoList{
+    color: #9a9a9a;
+    list-style-type: none;
+    font-family: 'Avenir Next LT Pro', 'Arial';
+    display: block;
+}
+
+#inCartProductInfoList,li {
+    padding-bottom: 0.5em;
+}
+
+.cartSubtotalCheckoutContainer{
+    display: block;
+    text-align: center;
+    height: 7em;
+}
+
+.cartSubtotalCheckoutWrapper {
+    display: flex;
+    margin-left: auto;
+    margin-top: 1em;
+    margin-right: auto;
+    width: 100%;
+}
+
+#cartTotalAmount {
+    margin-left: auto;
+    margin-right: auto;
     color: #636363;
 }
 
-#cartTextTwoRight {
+#cartSubtotal {
     color: #313131;
     font-weight: 550;
-    margin-left: 7em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cartTextOne {
@@ -231,9 +293,10 @@ body{
     color: white;
     background-color: black;
     padding: 1em 13.4em 1em;
-    margin-left: 1.3em;
-    margin-top: -12.4em;
-    position: absolute;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
     border-radius: 0.2em;
 }
 
@@ -393,7 +456,6 @@ body{
 .searchContainer {
     max-width: 11.6%;
     padding: 0 1em 0.3em 2em;
-    margin-left: 4.5em;
     height: 1.5em;
     margin-top: -0.4em;
     display: inline-table;
@@ -476,8 +538,10 @@ color: black;
 
 .resultsListingTextContainer {
     list-style-type: none;
+    width: 100%;
     margin-top: 1em;
     width: inherit;
+    margin-left: -1.5em;
 }
 
 #resultsListingName {

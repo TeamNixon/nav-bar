@@ -33,7 +33,7 @@ seeder.connect(db, function(){
         "color": "All Black",
         "colors": ["All Black", "Red", "Blue", "Gold", "Silver"],
         "product_description": "Set to Stun. The Sentry Leather is an elegant timepiece with an adventurous side. Think black tie meets block party. The face pops with depth and detail, but with the solid stainless steel case, hardened mineral crystal, and waterproof rating of 100m, you don't have to worry about it not being able to hang in the real world.",
-        "in_cart": false,
+        "in_cart": true,
         "reviews_amount": "200",
         "questions_amount": "200",
        " product_size": "42",
@@ -50,7 +50,7 @@ seeder.connect(db, function(){
         "color": "Polished Gold/ Navy Sunray",
         "colors": ["All Black", "Red", "Blue", "Gold", "Silver", "Polished Gold / Navy Sunray"],
         "product_description": "Set to Stun. The Sentry Leather is an elegant timepiece with an adventurous side. Think black tie meets block party. The face pops with depth and detail, but with the solid stainless steel case, hardened mineral crystal, and waterproof rating of 100m, you don't have to worry about it not being able to hang in the real world.",
-        "in_cart": false,
+        "in_cart": true,
         "reviews_amount": "44",
         "questions_amount": "5",
        " product_size": "42",
@@ -118,7 +118,7 @@ seeder.connect(db, function(){
               "color": "All Black / Gold",
               "colors": ["All Black", "Red", "Blue", "Gold", "Silver", "Polished Gold / Navy Sunray", "Black / Gold", "All Black / Gold"],
               "product_description": "Tried and True. Giving you the first-class experience all the way, the Porter looks as good as it feels—in no particular order. Its sleek profile and sophisticated design sit comfortably in any scenario, in other words, it takes any outfit up to the highest level.",
-              "in_cart": false,
+              "in_cart": true,
               "reviews_amount": "75",
               "questions_amount": "12",
               "product_size": "40",
@@ -196,70 +196,3 @@ seeder.connect(db, function(){
               },
     ]
   }]
-
-
-/*
-
-const mongoose = require('mongoose')
-const Product = require('./schema')
-const Images = require('./schema')
-let db = require('./index.js')
-
-let sampleProductData = [
-    {
-        id: 1,
-        product_name: "Porter Watch",
-        product_price: 175,
-        product_rating: 4.5,
-        discount: false,
-        discounted_price: null,
-        colors: [{ color: "All Black" }, { color: "Black / Gold" }, { color: "All Black/Gold" }],
-        product_description: "Tried and True. Giving you the first-class experience all the way, the Porter looks as good as it feels—in no particular order. Its sleek profile and sophisticated design sit comfortably in any scenario, in other words, it takes any outfit up to the highest level.",
-        in_cart: false,
-        product_size: [{ size: '40mm' }],
-        product_serial: "A1057 - 001 - 00",
-        product_url: "https://www.nixon.com/us/en/porter/A1057-001-00.html"
-    },
-    {
-        id: 2,
-        product_name: "Kensington Watch",
-        product_price: 175,
-        product_rating: 4.8,
-        discount: false,
-        discounted_price: null,
-        colors: [{ color: "All Black Crystal" }, { color: "Rose Gold / White" }, { color: "Rose Gold / Black" }],
-        product_description: "Hello, Gorgeous. Clean and simple design language, an updated take on heirloom styles.",
-        in_cart: false,
-        product_size: [{ size: '37mm' }],
-        product_serial: "A099-1098-00",
-        product_url: "https://www.nixon.com/us/en/kensington/A099.html?dwvar_A099_color=1879&dwvar_A099_size=00#start=1"
-    },
-    {
-        id: 3,
-        product_name: "Cape Leather Wallet",
-        product_price: 35,
-        product_rating: 4.8,
-        discount: false,
-        discounted_price: null,
-        colors: [{ color: "Black" }, { color: "Saddle" }],
-        product_description: "A 100% genuine leather wallet with embossed interior. Features easy access currency sleeve, mesh ID window, and custom metal logo rivet at front.",
-        in_cart: false,
-        product_size: [],
-        product_serial: "C2962-747-00",
-        product_url: "https://www.nixon.com/us/en/cape-leather-wallet/C2962.html?dwvar_C2962_color=000&dwvar_C2962_size=00"
-    }
-];
-
-let seedSampleData = function () {
-    Product.deleteMany({})
-    .then(Product.insertMany(sampleProductData))
-    .then(() => {
-        console.log("seeded Products")
-        mongoose.connection.close()
-    })
-    .catch(err => console.log(err));
-};
-
-seedSampleData();
-
-*/

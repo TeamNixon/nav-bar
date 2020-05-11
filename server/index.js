@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, '../client/dist')));
 
 
-app.get(`/api/search/`, (req, res) => {
+app.get(`/api/navbar/search/`, (req, res) => {
     controller.getAll()
     .then(data => {
         res.status(200).send(data)
@@ -20,9 +20,18 @@ app.get(`/api/search/`, (req, res) => {
     })
 })
 
-app.get(`/api/search/:query`, (req, res) => {
+app.get(`/api/navbar/search/:query`, (req, res) => {
     let query = req.params.query
     controller.search(query)
+    .then(data => {
+        res.status(200).send(data)
+    })
+    .catch(error => {
+        res.status(400).send(error)
+    })
+})
+app.get(`/api/navbar/incart/`, (req, res) => {
+    controller.getCartItem()
     .then(data => {
         res.status(200).send(data)
     })

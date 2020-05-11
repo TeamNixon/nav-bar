@@ -20,7 +20,7 @@ class SearchBar extends React.Component {
 
   getAllData() {
     axios
-      .get(`/api/search/`)
+      .get(`/api/navbar/search/`)
       .then((results) =>
         this.setState(
           {
@@ -37,7 +37,7 @@ class SearchBar extends React.Component {
       [e.target.name]: e.target.value,
     }, ()=>{
       axios
-      .get(`/api/search/${this.state.product_price}`)
+      .get(`/api/navbar/search/${this.state.product_price}`)
       .then(results =>
         this.setState({
           data: results.data

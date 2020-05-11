@@ -10,6 +10,9 @@ let controllers = {
     ),
     search: (query) => (
         Product.findOne({product_price: query})
+    ),
+    getCartItem: () => (
+        Product.find({in_cart: true})
     )
 }
 
