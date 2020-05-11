@@ -36,14 +36,16 @@ class SearchBar extends React.Component {
     this.setState({
       [e.target.name]: e.target.value,
     }, ()=>{
-      axios
-      .get(`/api/navbar/search/${this.state.product_price}`)
-      .then(results =>
-        this.setState({
-          data: results.data
-        }, ()=> console.log(this.state.data))
-      )
-      .catch((err) => console.error(err));
+      if (this.state.product_price.length > 2) {
+        axios
+        .get(`/api/navbar/search/${this.state.product_price}`)
+        .then(results =>
+          this.setState({
+            data: results.data
+          }, ()=> console.log(this.state.data))
+        )
+        .catch((err) => console.error(err));
+      }
     });
   }
 // <div class="<%= @success ? 'good' : 'bad' %>">

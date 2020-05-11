@@ -527,9 +527,10 @@ color: black;
     list-style-type: none;
     margin-left: -2.5em;
     padding: 1em 0.5em 1em 0.5em;
-    display: inline-flex;
-    width: -webkit-fill-available;
+    display: flex;
+    width: fit-content;
     cursor: pointer;
+
 }
 
 #resultsImg {
@@ -541,7 +542,6 @@ color: black;
     width: 100%;
     margin-top: 1em;
     width: inherit;
-    margin-left: -1.5em;
 }
 
 #resultsListingName {

@@ -14,6 +14,7 @@ let controllers = {
     getCartItem: () => (
         Product.find({in_cart: true})
     )
+
 }
 
 module.exports = controllers;
