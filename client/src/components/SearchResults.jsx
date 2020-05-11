@@ -6,7 +6,7 @@ class SearchResults extends React.Component {
       super(props);
       this.state = {
           results: [],
-          suggestionText: "Sample",
+          suggestionText: "Watch",
       }
     }
   
@@ -33,15 +33,21 @@ class SearchResults extends React.Component {
     //     });
     //   }
     // }
-
+    handleClear(){
+      this.setState({
+        results: []
+      })
+    }
 
     render() {
       if(this.state.results.length > 0) {
         return (
+          <div>
+          <div className="crossButton" onClick={this.handleClear.bind(this)}>X</div>
           <div className="searchResultsContainer">
           <div className="suggestionContainer">
               <div className="suggestionContainerText">{`Suggestions: `}</div>
-              <div className="suggestionContainerQuery">{`"${this.state.suggestionText}"`}</div>
+              <div className="suggestionContainerQuery">{` "${this.state.suggestionText}"`}</div>
           </div>
           <ul className="resultsListingContainerWrapper">
           {this.state.results.map((item, index) => (
@@ -55,6 +61,7 @@ class SearchResults extends React.Component {
               </li>
           ))}
           </ul>
+          </div>
           </div>
         );
       } else {

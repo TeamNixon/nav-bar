@@ -46,7 +46,8 @@ class SearchBar extends React.Component {
       .catch((err) => console.error(err));
     });
   }
-
+// <div class="<%= @success ? 'good' : 'bad' %>">
+//    <div [ngClass]="{'message message-you':(item.uid == you.uid)}">
   render() {
       return (
         <div className="searchContainerWrapper">

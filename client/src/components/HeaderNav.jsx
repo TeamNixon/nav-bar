@@ -4,7 +4,7 @@ class HeaderNav extends React.Component {
 constructor(){
     super();
     this.state = {
-        hover: 'Men'
+        hover: 'None'
     }
     this.handleHover = this.handleHover.bind(this)
 }
