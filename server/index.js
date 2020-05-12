@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, '../client/dist')));
 
 
-app.get(`/api/navbar/search/`, (req, res) => {
+app.get(`/api/navbar/all/`, (req, res) => {
     controller.getAll()
     .then(data => {
         res.status(200).send(data)

@@ -9,12 +9,14 @@ let controllers = {
         Product.find({})
     ),
     search: (query) => (
-        Product.find({product_price: query})
+        Product.find( {"product_name": {$regex: query, $options: "i"} } )
+        // Product.find( {
+        //     $or : [ {product_name: { $regex: query, $options: "i"} }, {product_price: query} ]
+        // })
     ),
     getCartItem: () => (
         Product.find({in_cart: true})
     )
-
 }
 
 module.exports = controllers;

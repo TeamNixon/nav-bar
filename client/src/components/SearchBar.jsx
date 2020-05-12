@@ -6,7 +6,7 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      product_price: "",
+      query: "",
       searchResults: []
     };
     this.getAllData = this.getAllData.bind(this);
@@ -19,62 +19,61 @@ class SearchBar extends React.Component {
     console.log("SearchBar Mounted!");
   }
 
-  getAllData() {
+  getAllData(e) {
+    e.preventDefault();
     axios
-      .get(`/api/navbar/search/`)
+      .get(`/api/navbar/all/`)
       .then((results) =>
         this.setState(
           {
-            data: results.data
+            searchResults: results.data
           }))
       .catch((error) => console.error(error));
   }
 
   handleInputChange(e) {
-    this.setState({
-      [e.target.name]: e.target.value
-    }, () => {
-      if (this.state.product_price.length > 2) {
-        axios
-        .get(`/api/navbar/search/${this.state.product_price}`)
-        .then(results =>
-          this.setState({
-            searchResults: results.data
-          })
-        )
-        .catch((err) => console.error(err));
-      }
-    });
+      this.setState({
+        [e.target.name]: e.target.value
+      }, () => {
+        if(this.state.query.length > 2) {
+          axios
+          .get(`/api/navbar/search/${this.state.query}`)
+          .then(results =>
+            this.setState({
+              searchResults: results.data
+            })
+          )
+          .catch((err) => console.error(err));
+        }
+      });
   }
 
   handleSubmit(e) { // optional to have because searches on change
     e.preventDefault();
-    if (this.state.product_price.length > 2) {
       axios
-      .get(`/api/navbar/search/${this.state.product_price}`)
+      .get(`/api/navbar/search/${this.state.query}`)
       .then(results =>
         this.setState({
           searchResults: results.data
         })
       )
       .catch((err) => console.error(err));
-    }
   }
 
   render() {
       return (
         <div className="searchContainerWrapper">
-          <form className="searchBarWrapper"  onSubmit={this.handleSubmit}>
+          <form className="searchBarWrapper"  onSubmit={(e) => this.getAllData(e)}>
             <input
               className="inputBar"
-              name="product_price"
+              name="query"
               onChange={this.handleInputChange}
               placeholder="What can we help you find?"
             ></input>
           </form>
 
           <SearchResults 
-          suggestionText={this.state.product_price}
+          suggestionText={this.state.query}
           results={this.state.searchResults}
           />
         </div>
