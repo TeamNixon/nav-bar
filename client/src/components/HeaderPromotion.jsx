@@ -35,7 +35,7 @@ class HeaderPromotion extends React.Component {
         if (this.state.index > 0) {
           this.setState({
               index: (this.state.index-=1)
-          }, ()=> console.log(this.state.index))
+          })
         } else {
             this.setState({
               index: 2
