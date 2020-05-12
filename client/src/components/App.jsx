@@ -6,11 +6,12 @@ import SearchBar from './SearchBar.jsx';
 import HeaderNav from './HeaderNav.jsx';
 import HeaderPromotion from './HeaderPromotion.jsx';
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cartQuantity: 0,
+      cartQuantity: 0
     }
     this.updateCartQuantity = this.updateCartQuantity.bind(this)
   }
@@ -44,7 +45,9 @@ class App extends React.Component {
           <div className="searchContainer">
             <img className="searchIcon" src="magnifying_icon.png"></img>
             <div className="inputWrapper">
+
             <SearchBar/>
+
             </div>
           </div>
 

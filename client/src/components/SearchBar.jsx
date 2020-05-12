@@ -7,10 +7,11 @@ class SearchBar extends React.Component {
     super(props);
     this.state = {
       product_price: "",
-      data: []
+      searchResults: []
     };
     this.getAllData = this.getAllData.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   componentDidMount() {
@@ -24,46 +25,58 @@ class SearchBar extends React.Component {
       .then((results) =>
         this.setState(
           {
-            data: results.data,
-          },
-          () => console.log(this.state)
-        )
-      )
+            data: results.data
+          }))
       .catch((error) => console.error(error));
   }
 
   handleInputChange(e) {
     this.setState({
-      [e.target.name]: e.target.value,
-    }, ()=>{
+      [e.target.name]: e.target.value
+    }, () => {
       if (this.state.product_price.length > 2) {
         axios
         .get(`/api/navbar/search/${this.state.product_price}`)
         .then(results =>
           this.setState({
-            data: results.data
-          }, ()=> console.log(this.state.data))
+            searchResults: results.data
+          })
         )
         .catch((err) => console.error(err));
       }
     });
   }
-// <div class="<%= @success ? 'good' : 'bad' %>">
-//    <div [ngClass]="{'message message-you':(item.uid == you.uid)}">
+
+  handleSubmit(e) { // optional to have because searches on change
+    e.preventDefault();
+    if (this.state.product_price.length > 2) {
+      axios
+      .get(`/api/navbar/search/${this.state.product_price}`)
+      .then(results =>
+        this.setState({
+          searchResults: results.data
+        })
+      )
+      .catch((err) => console.error(err));
+    }
+  }
+
   render() {
       return (
         <div className="searchContainerWrapper">
-          <form className="searchBarWrapper">
+          <form className="searchBarWrapper"  onSubmit={this.handleSubmit}>
             <input
               className="inputBar"
               name="product_price"
-              onChange={(e) => this.handleInputChange(e)}
+              onChange={this.handleInputChange}
               placeholder="What can we help you find?"
             ></input>
           </form>
-          <SearchResults
-            suggestionText={"Sample"}
-           results={this.state.data}/>
+
+          <SearchResults 
+          suggestionText={this.state.product_price}
+          results={this.state.searchResults}
+          />
         </div>
       );
   }
