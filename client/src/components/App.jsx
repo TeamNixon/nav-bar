@@ -51,8 +51,8 @@ class App extends React.Component {
             </div>
           </div>
 
-          <div className="rightsideDiv">
-            <ul className="rightside">
+          <div className="rightSideUserPanelContainer">
+            <ul className="rightSideUserPanelList">
               <img id="flagIcon" src="http://icons.iconarchive.com/icons/wikipedia/flags/256/US-United-States-Flag-icon.png"></img>
               <li id="list">EN</li>
               <li id="list">Find a Store</li>

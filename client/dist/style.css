@@ -28,10 +28,10 @@ body{
 }
 
 .headerPromotions {
+    width: 27%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 27%;
     padding-top: 0.8em;
 }
 
@@ -78,11 +78,14 @@ body{
     margin-right: auto;
 }
 
-.rightsideDiv {
+/* RIGHT SIDE USER PANEL ===========================================
+===================================================================*/
+
+.rightSideUserPanelContainer {
     margin-left: auto;
 }
 
-.rightside{
+.rightSideUserPanelList{
     display: flex;
     margin-top: 6%;
 }
@@ -130,7 +133,7 @@ body{
     margin-top: 4.8em;
 }
 
-#loginButton{
+#loginButton {
     margin-left: -9.5em;
     margin-top: 1.7em;
     background-color: black;
@@ -145,7 +148,7 @@ body{
 #loginButton:hover {
     background-color: #313131;
     cursor: pointer;
-  }
+}
 
 #downArrowIcon{
     max-height: 1em;
@@ -161,8 +164,8 @@ body{
 }
 
 
-/*CHECKOUT CART HOVER ======================
-===================================*/
+/*CHECKOUT CART HOVER ==========================================
+=================================================================*/
 .cartIconContainer{
     max-width: fit-content;
     margin-left: 1.4em;
@@ -305,8 +308,9 @@ body{
     cursor: pointer;
   }
 
-/* CATEGORY NAV BAR ====================
-==========================================*/
+
+/* CATEGORY NAV BAR ============================================
+=================================================================*/
 .navBarContainer {
     margin-top: -0.3em;
     margin-left: auto;
@@ -442,8 +446,10 @@ body{
     color:  rgb(41, 41, 41);
     font-family: 'Avenir Next LT Pro',Arial,sans-serif;
 }
-/* SEARCH RESULTS ---------------------------------
----------------------------------------------------*/
+
+
+/* SEARCH RESULTS ==========================================
+============================================================*/
 .crossButton {
     cursor: pointer;
     margin-top: -1.3em;
