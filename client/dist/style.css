@@ -567,3 +567,318 @@ color: black;
     overflow-y: scroll;
     max-height: calc(600px - 129px);
 }
+
+/*RYLAN'S COMPONENT CSS ================================
+===========================================================*/
+
+
+#product-nav{
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 60px;
+  }
+  
+  #product-nav a{
+    color: gray;
+    text-decoration: none;
+  }
+  
+  #product-nav a:hover{
+    color: black;
+  }
+  
+  #product-container{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  
+  
+  #product-display{
+    display: flex;
+    width: 25%;
+  
+  }
+  
+  #face-size{
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
+    margin-top: 30px;
+    font-size: 12px;
+    margin-left: .5em;
+    margin-bottom: 0px;
+  }
+  
+  #product-name{
+    font-size: 16px;
+    margin-left: .5em;
+    margin-top: 0px;
+  }
+  
+  #product-color{
+    color: gray;
+    font-size: 14px;
+    margin-left: .5em;
+  }
+  
+  #product-rating{
+    font-size: 14px;
+    margin-left: .5em;
+  }
+  
+  #product-desc{
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+    margin: .5em;
+    margin-bottom: 15px;
+  }
+  
+  button:hover{
+    cursor: pointer;
+  }
+  
+  .product-gallery-image{
+    text-align: left;
+    list-style: none;
+    display: inline;
+  }
+  
+  .product-gallery-image:hover{
+    cursor: pointer;
+  }
+  
+  .disp-thumb{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+  
+  }
+  
+  #image-col2{
+  
+    display: inline;
+    width: 50%;
+  }
+  
+  #main{
+    align-items: center;
+    text-align: center;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 10%;
+  }
+  
+  #main:hover{
+    cursor: zoom-in;
+  }
+  
+  
+  #select-col3{
+    display: flex;
+    width: 25%;
+    display: inline;
+  }
+  
+  #specs{
+    display: inline;
+  }
+  #color{
+    margin-left: 10px;
+    margin-top: 50%;
+    text-align: left;
+    font-size: .85em;
+  
+  }
+  
+  #serial{
+    display: inline;
+    color: gray;
+    text-align: right;
+    margin-left: 50%;
+  
+  }
+  
+  .color-gallery-image{
+    display: inline;
+    list-style: none;
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .color-gallery-image:hover{
+    cursor: pointer;
+  }
+  .color-thumb{
+    height: 30px;
+    width: 30px;
+  }
+  
+  #price-info{
+    margin-top: 4em;
+    margin-left: .4em;
+    font-size: 20px;
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
+  }
+  #afterpay{
+    text-align: left;
+    margin-left: .5em;
+    font-size: .85em;
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
+  }
+  
+  #afterpay-img{
+    margin-left: 5px;
+    height: 15px;
+    width: 70px;
+    vertical-align: middle;
+  }
+  
+  #add-to-cart{
+    border: 1px solid black;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 42px 11px;
+    color: white;
+    background-color: black;
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
+    margin-left: 30px;
+    height: 40px;
+    width:60%;
+  }
+  
+  #wl{
+    order: 3px solid black;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-family: 'Avenir Next LT Pro',Arial,sans-serif;
+    margin-left: 5px;
+    height: 40px;
+  }
+  
+  .icon{
+    float: left;
+    margin: 30px 10px 0px 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  #promo-text{
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  
+  #callout {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  
+  
+  /* INNER ZOOM COMPONENT START*/
+  .iiz {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: zoom-in;
+  }
+  
+  .iiz__img {
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    display: block;
+    pointer-events: none;
+  }
+  
+  .iiz__zoom-img {
+    width: auto !important;
+    max-width: none !important;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+  }
+  
+  .iiz__zoom-img--visible {
+    visibility: visible;
+    opacity: 1;
+    cursor: zoom-out;
+  }
+  
+  .iiz__zoom-portal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+  }
+  
+  .iiz__btn {
+    background: rgba(255, 255, 255, 0.8);
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+  }
+  
+  .iiz__btn:before {
+    content: " ";
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  
+  .iiz__hint {
+    bottom: 10px;
+    right: 10px;
+    pointer-events: none;
+  }
+  
+  .iiz__hint:before {
+    content: " ";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19.9 19.9'%3E%3Cpath d='M13.9 7.4C13.9 3.8 11 .9 7.4.9S.9 3.8.9 7.4s2.9 6.5 6.5 6.5 6.5-2.9 6.5-6.5zm5.3 12.5l-6.7-7.2c-1.4 1.3-3.2 2.1-5.1 2.1-4.1 0-7.4-3.3-7.4-7.4S3.3 0 7.4 0s7.4 3.3 7.4 7.4c0 1.7-.6 3.4-1.7 4.7l6.8 7.2-.7.6z' fill='%23000222'/%3E%3C/svg%3E");
+    width: 20px;
+    height: 20px;
+  }
+  
+  .iiz__close {
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .iiz__close--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .iiz__close::before {
+    content: " ";
+    width: 29px;
+    height: 29px;
+    background-image: linear-gradient(#222, #222), linear-gradient(#222, #222);
+    background-size: 100% 1px, 1px 100%;
+    transform: rotate(45deg);
+  }
