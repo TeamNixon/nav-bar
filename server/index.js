@@ -1,5 +1,6 @@
 let port = 1739;
 let express = require('express');
+let cors = require('cors');
 let path = require('path');
 let bodyParser = require('body-parser');
 let controller = require('../database/index.js');
@@ -8,6 +9,8 @@ let app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, '../client/dist')));
+app.use(cors());
+
 
 app.get('/api/navbar/all/', (req, res) => {
   controller.getAll()
