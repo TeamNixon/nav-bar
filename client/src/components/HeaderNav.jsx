@@ -22,19 +22,19 @@ if(this.state.hover == 'Men') {
 <ul className="navBarList">
 <div className="navBarCategoryItemWrapper">
     <li id="navBarCategoryItemActive" onMouseLeave={() => this.handleHover('None')}>Men's Watches</li>
-    <img id="navBarUpArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+    <img id="navBarUpArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
 </div>
 <div className="navBarCategoryItemWrapper">
 <li id="navBarCategoryItem">Women's Watches</li>
-<img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+<img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
 </div>
 <div className="navBarCategoryItemWrapper">
 <li id="navBarCategoryItem">Bags</li>
-<img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+<img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
 </div>
 <div className="navBarCategoryItemWrapper">
 <li id="navBarCategoryItem">Clothing & Accessories</li>
-<img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+<img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
 </div>
 </ul>
 <div className="navBarHoverBox" onMouseLeave={() => this.handleHover('None')}>
@@ -46,7 +46,7 @@ if(this.state.hover == 'Men') {
             <li id="watchesShoppingItem">Custom</li>
             <li id="watchesShoppingItem">
             Shop All
-            <img id="watchesCategoryShopAllArrow" src="https://cdns.iconmonstr.com/wp-content/assets/preview/2018/240/iconmonstr-arrow-right-thin.png"></img>
+            <img id="watchesCategoryShopAllArrow" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/right_icon.png"></img>
             </li>
         </ul>
     </div>
@@ -91,19 +91,19 @@ if(this.state.hover == 'Men') {
 <ul className="navBarList">
 <div className="navBarCategoryItemWrapper">
     <li id="navBarCategoryItem">Men's Watches</li>
-    <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+    <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
 </div>
 <div className="navBarCategoryItemWrapper">
 <li id="navBarCategoryItemActive" onMouseLeave={() => this.handleHover('None')}>Women's Watches</li>
-<img id="navBarUpArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+<img id="navBarUpArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
 </div>
 <div className="navBarCategoryItemWrapper">
 <li id="navBarCategoryItem">Bags</li>
-<img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+<img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
 </div>
 <div className="navBarCategoryItemWrapper">
 <li id="navBarCategoryItem">Clothing & Accessories</li>
-<img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+<img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
 </div>
 </ul>
 <div className="navBarHoverBox" onMouseLeave={() => this.handleHover('None')}>
@@ -115,7 +115,7 @@ if(this.state.hover == 'Men') {
             <li id="watchesShoppingItem">Custom</li>
             <li id="watchesShoppingItem">
             Shop All
-            <img id="watchesCategoryShopAllArrow" src="https://cdns.iconmonstr.com/wp-content/assets/preview/2018/240/iconmonstr-arrow-right-thin.png"></img>
+            <img id="watchesCategoryShopAllArrow" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/right_icon.png"></img>
             </li>
         </ul>
     </div>
@@ -157,19 +157,19 @@ if(this.state.hover == 'Men') {
             <ul className="navBarList">
             <div className="navBarCategoryItemWrapper">
                 <li id="navBarCategoryItem">Men's Watches</li>
-                <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+                <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
             <div className="navBarCategoryItemWrapper">
             <li id="navBarCategoryItem">Women's Watches</li>
-            <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
             <div className="navBarCategoryItemWrapper">
             <li id="navBarCategoryItemActive" onMouseLeave={() => this.handleHover('None')}>Bags</li>
-            <img id="navBarUpArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarUpArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
             <div className="navBarCategoryItemWrapper">
             <li id="navBarCategoryItem">Clothing & Accessories</li>
-            <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
             </ul>
             <div className="navBarHoverBox" onMouseLeave={() => this.handleHover('None')}>
@@ -180,7 +180,7 @@ if(this.state.hover == 'Men') {
                         <li id="watchesShoppingItem">Best Sellers</li>
                         <li id="watchesShoppingItem">
                         Shop All
-                        <img id="watchesCategoryShopAllArrow" src="https://cdns.iconmonstr.com/wp-content/assets/preview/2018/240/iconmonstr-arrow-right-thin.png"></img>
+                        <img id="watchesCategoryShopAllArrow" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/right_icon.png"></img>
                         </li>
                     </ul>
                 </div>
@@ -210,19 +210,19 @@ if(this.state.hover == 'Men') {
             <ul className="navBarList">
             <div className="navBarCategoryItemWrapper">
                 <li id="navBarCategoryItem">Men's Watches</li>
-                <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+                <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
             <div className="navBarCategoryItemWrapper">
             <li id="navBarCategoryItem">Women's Watches</li>
-            <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
             <div className="navBarCategoryItemWrapper">
             <li id="navBarCategoryItem">Bags</li>
-            <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
             <div className="navBarCategoryItemWrapper">
             <li id="navBarCategoryItemActive" onMouseLeave={() => this.handleHover('None')}>Clothing & Accessories</li>
-            <img id="navBarUpArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarUpArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
             </ul>
             <div className="navBarHoverBox" onMouseLeave={() => this.handleHover('None')}>
@@ -233,7 +233,7 @@ if(this.state.hover == 'Men') {
                         <li id="watchesShoppingItem">Stay At Home</li>
                         <li id="watchesShoppingItem">
                         Shop All
-                        <img id="watchesCategoryShopAllArrow" src="https://cdns.iconmonstr.com/wp-content/assets/preview/2018/240/iconmonstr-arrow-right-thin.png"></img>
+                        <img id="watchesCategoryShopAllArrow" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/right_icon.png"></img>
                         </li>
                     </ul>
                 </div>
@@ -263,19 +263,19 @@ if(this.state.hover == 'Men') {
         <ul className="navBarList">
             <div className="navBarCategoryItemWrapper" onMouseOver={() => this.handleHover("Men")}>
           <li id="navBarCategoryItem">Men's Watches</li>
-          <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+          <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
           <div className="navBarCategoryItemWrapper" onMouseOver={() => this.handleHover("Women")}>
             <li id="navBarCategoryItem">Women's Watches</li>
-            <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
           </div>
           <div className="navBarCategoryItemWrapper" onMouseOver={() => this.handleHover("Bags")}>
             <li id="navBarCategoryItem">Bags</li>
-            <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
             </div>
           <div className="navBarCategoryItemWrapper" onMouseOver={() => this.handleHover("Clothing")}>
             <li id="navBarCategoryItem">Clothing & Accessories</li>
-            <img id="navBarDownArrowIcon" src="https://st2.depositphotos.com/4060975/8059/v/450/depositphotos_80596450-stock-illustration-down-arrow-vector-icon.jpg"></img>
+            <img id="navBarDownArrowIcon" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/arrow_icon.jpg"></img>
           </div>
         </ul>
       </div>

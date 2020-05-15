@@ -47,13 +47,13 @@ render(){
 if(this.state.hover) {
     return (
         <div className="cartIconContainer" onMouseOver={this.handleHover.bind(this)}>
-        <img id="cartIconImg" src="https://static.thenounproject.com/png/11951-200.png"></img>
+        <img id="cartIconImg" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/cart_icon.png"></img>
         </div>
     )
     } else {
         return (
         <div className="cartIconContainer">
-        <img id="cartIconImg" src="https://static.thenounproject.com/png/11951-200.png"></img>
+        <img id="cartIconImg" src="https://fec-nixon-assets-public.s3-us-west-1.amazonaws.com/cart_icon.png"></img>
         <div className="cartHoverContainer" onMouseLeave={this.handleHover.bind(this)}>
             <div id="cartTextOne">{`1 item added to cart`}</div>
 
