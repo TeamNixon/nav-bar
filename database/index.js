@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var mongoUri = 'mongodb://localhost/FEC';
+var mongoUri = 'mongodb://mongo:27018/FEC';
 var db = mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

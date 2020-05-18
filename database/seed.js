@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 var seeder = require('mongoose-seed');
 require('./schema.js');
-const db = 'mongodb://127.0.0.1:27017/FEC';
+const db = 'mongodb://mongo:27018/FEC';
 
 const data = [{
   'model': 'Product',
