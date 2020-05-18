@@ -19,7 +19,7 @@ componentDidMount(){
 }
 
 getCartItems(){
-    axios.get(`http://localhost:1739/api/navbar/incart/`)
+    axios.get(`http://ec2-54-172-109-242.compute-1.amazonaws.com:1739/api/navbar/incart/`)
     .then(results => this.setState({
         inCartProducts: results.data
     }, () => this.props.updateCartQuantity(this.state.inCartProducts.length)))

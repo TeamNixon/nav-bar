@@ -12,7 +12,7 @@ app.use(express.static(path.resolve(__dirname, '../client/dist')));
 app.use(cors());
 
 
-app.get('http://localhost:1739/bundle.js', (req, res) => {
+app.get('/bundle.js', (req, res) => {
   if (err) {
     console.log(err)
   } 

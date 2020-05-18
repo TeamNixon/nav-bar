@@ -22,7 +22,7 @@ class SearchBar extends React.Component {
   getAllData(e) {
     e.preventDefault();
     axios
-      .get(`http://localhost:1739/api/navbar/all/`)
+      .get(`http://ec2-54-172-109-242.compute-1.amazonaws.com:1739//api/navbar/all/`)
       .then((results) =>
         this.setState({
           searchResults: results.data,
@@ -39,7 +39,7 @@ class SearchBar extends React.Component {
       () => {
         if (this.state.query.length > 2) {
           axios
-            .get(`http://localhost:1739/api/navbar/search/${this.state.query}`)
+            .get(`http://ec2-54-172-109-242.compute-1.amazonaws.com:1739/api/navbar/search/${this.state.query}`)
             .then((results) =>
               this.setState({
                 searchResults: results.data,
@@ -55,7 +55,7 @@ class SearchBar extends React.Component {
     // optional to have because searches on change
     e.preventDefault();
     axios
-      .get(`http://localhost:1739/api/navbar/search/${this.state.query}`)
+      .get(`http://ec2-54-172-109-242.compute-1.amazonaws.com:1739/api/navbar/search/${this.state.query}`)
       .then((results) =>
         this.setState({
           searchResults: results.data,
