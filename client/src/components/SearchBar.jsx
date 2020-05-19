@@ -22,11 +22,7 @@ class SearchBar extends React.Component {
   getAllData(e) {
     e.preventDefault();
     axios
-<<<<<<< HEAD
       .get(`http://ec2-54-172-109-242.compute-1.amazonaws.com:1739/api/navbar/all/`)
-=======
-      .get(`http://ec2-54-172-109-242.compute-1.amazonaws.com:1739//api/navbar/all/`)
->>>>>>> bbebdc6296f2a4b56017c354a1e0c6a951201bd5
       .then((results) =>
         this.setState({
           searchResults: results.data,

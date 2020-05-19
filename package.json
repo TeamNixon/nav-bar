@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "seed": "node database/seed.js",
+    "start": "nodemon server/index.js",
     "start-main":  "node database/seed.js && node ./server/index.js",
     "dev": "webpack -d --watch"
   },
